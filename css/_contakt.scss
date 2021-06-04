@@ -1,0 +1,28 @@
+.contakt{
+  background-color: $primary-bg-block;
+  margin-left: 320px;
+  padding: 10px 10px 10px 30px;
+}
+.contakt-foto{
+  max-width: 185px;
+  max-height: 226px;
+  border-radius: 5px;
+  box-shadow: 8px 13px 7px rgba(0, 0, 0, 0.3);
+  float: left;
+  margin: 15px;
+}
+.contakt-description,
+.podrobno-description{
+  padding: 20px;
+  color: $color-txt-block;
+  p{
+    margin-top: 20px;
+    line-height: 1.2;
+    text-align: justify;
+  }
+  span{
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+}

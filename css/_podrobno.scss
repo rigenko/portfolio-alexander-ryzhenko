@@ -1,0 +1,53 @@
+.podrobno-block{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 320px;
+  position: relative;
+  background-color: $primary-bg-block;
+}
+.podrobno-img{
+  margin: 40px;
+}
+.podrobno-img-1,
+.podrobno-img-2{
+  box-shadow: 0 0 10px rgba(90, 88, 88, 0.5);
+  transition: 1s;
+  // &:hover{
+  //   transform: scale(1.8) translate(120px, 490px);
+  //   margin-left:  70px;
+  // }
+}
+.podrobno-img-1{
+  max-width: 540px;
+  animation-name:появление; 
+	animation-duration: 2s;
+}
+
+.podrobno-img-2{
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  max-width: 900px;
+  animation-name:появление; 
+	animation-duration: 2s;
+}
+@keyframes появление{
+  0%{
+    opacity:0;
+    }
+  100% {
+    opacity:1;
+    /*background: #18ead9;*/
+    }
+  }
+
+.podrobno-img--non{
+  display: none;
+}
+.podrobno-img-btn{
+  @include mx-podrobno-img-btn;
+  margin-bottom: 15px;
+}
+.portfolio-bottom{
+  @include mx-podrobno-img-btn;
+}

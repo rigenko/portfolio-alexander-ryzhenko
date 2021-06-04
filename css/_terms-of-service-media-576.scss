@@ -1,0 +1,22 @@
+@media (max-width : 576px) {
+	.sidebar{
+    position: static;
+    height: auto;
+    justify-content: center;
+    max-width: 576px;
+    text-align: center;
+  }
+  .sidebar-copyright{
+    @include mx-main-txt;
+  }
+  .sidebar-navigation__link{
+    font-size: 18px;
+  }
+  .sidebar-social{
+    justify-content: center;
+  }
+  .terms-of-service{
+    margin: 0;
+    width: auto;
+  }
+}

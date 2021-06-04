@@ -1,0 +1,17 @@
+@media (max-width : 576px) {
+  .bg-block{
+    background-image: url(../img/bg-body/bg-bodi-md-576.jpg);
+  }
+	.title{
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .header-navigation__row{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-row{
+    text-align: center;
+  }
+  
+}
