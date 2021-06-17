@@ -56,7 +56,7 @@ table {
 body {
   font-family: "Mulish", sans-serif;
   color: #fff;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 .container {
@@ -69,8 +69,8 @@ a {
   border: none;
   outline: none;
   background-color: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
   text-decoration: none;
 }
 
@@ -565,6 +565,8 @@ img {
 
 .podrobno-img {
   margin: 40px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .podrobno-img-1,
@@ -576,7 +578,6 @@ img {
 }
 
 .podrobno-img-1 {
-  max-width: 540px;
   -webkit-animation-name: появление;
           animation-name: появление;
   -webkit-animation-duration: 2s;
@@ -585,7 +586,7 @@ img {
 
 .podrobno-img-2 {
   position: absolute;
-  top: 120px;
+  top: 100px;
   left: 20px;
   max-width: 900px;
   -webkit-animation-name: появление;
@@ -619,18 +620,18 @@ img {
 }
 
 .podrobno-img-btn {
-  display: block;
-  background: -webkit-gradient(linear, left bottom, left top, from(#94b332), to(#759b28));
-  background: linear-gradient(to top, #94b332, #759b28);
-  border-radius: 5px;
-  -webkit-box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
-          box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
-  padding: 10px 30px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border: 3px solid red;
+  padding: 10px;
   font-size: 14px;
   color: #fff;
-  text-transform: uppercase;
   text-align: center;
-  margin-bottom: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  z-index: 50;
 }
 
 .podrobno-img-btn:hover {
@@ -640,31 +641,32 @@ img {
 }
 
 .podrobno-img-btn:active {
-  -webkit-box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
-          box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
-.portfolio-bottom {
-  display: block;
+.podrobno-btn {
+  display: inline-block;
   background: -webkit-gradient(linear, left bottom, left top, from(#94b332), to(#759b28));
   background: linear-gradient(to top, #94b332, #759b28);
-  border-radius: 5px;
-  -webkit-box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
-          box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 0 5px 0 5px;
+  -webkit-box-shadow: 8px 13px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 8px 13px 7px rgba(0, 0, 0, 0.3);
   padding: 10px 30px;
-  font-size: 14px;
+  font-size: 18px;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 30px;
 }
 
-.portfolio-bottom:hover {
+.podrobno-btn:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(#759b28), to(#94b332));
   background: linear-gradient(to top, #759b28, #94b332);
   color: #f7160b;
 }
 
-.portfolio-bottom:active {
+.podrobno-btn:active {
   -webkit-box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
           box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
 }

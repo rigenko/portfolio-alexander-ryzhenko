@@ -59,13 +59,13 @@
     box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
   }
 }
-@mixin mx-podrobno-img-btn{
-  display: block;
+@mixin mx-podrobno-btn{
+  display: inline-block;
   background: linear-gradient(to top, #94b332, #759b28);
-  border-radius: 5px;
-  box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 0 5px 0 5px;
+  box-shadow: 8px 13px 7px rgba(0, 0, 0, 0.3);
   padding: 10px 30px;
-  font-size: 14px;
+  font-size: 18px;
   color: $primary-color-txt;
   text-transform: uppercase;
   text-align: center;
@@ -75,5 +75,22 @@
   }
   &:active{
     box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
+  }
+}
+@mixin mx-podrobno-img-btn{
+  background: rgba(0,0,0, 0.1);
+  border-radius: 50%;
+  border: 3px solid red;
+  padding: 10px;
+  font-size: 14px;
+  color: $primary-color-txt;
+  text-align: center;
+  cursor: pointer;
+  &:hover{
+    background: linear-gradient(to top, #759b28, #94b332);
+    color: #f7160b;
+  }
+  &:active{
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   }
 }

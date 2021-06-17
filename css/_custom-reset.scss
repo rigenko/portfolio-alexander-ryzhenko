@@ -1,7 +1,7 @@
 body{
   font-family: $primary-font;
   color: $primary-color-txt;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 .container{
   max-width: 1200px;
@@ -12,7 +12,7 @@ a{
   border: none;
   outline: none;
   background-color: none;
-  transition: 0.5s;
+  transition: color 0.5s;
   text-decoration: none;
   &:focus{
     box-shadow: 0 0 10px rgba(90, 88, 88, 0.5);
