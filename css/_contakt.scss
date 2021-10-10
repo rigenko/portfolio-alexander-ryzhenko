@@ -7,15 +7,17 @@
   max-width: 185px;
   max-height: 226px;
   border-radius: 5px;
-  box-shadow: 8px 13px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.3);
   float: left;
   margin: 15px;
 }
 .contakt-description,
-.podrobno-description{
+.podrobno-description,
+.contakt-table{
   padding: 20px;
   color: $color-txt-block;
-  p{
+  p,
+  td{
     margin-top: 20px;
     line-height: 1.2;
     text-align: justify;
@@ -24,5 +26,20 @@
     font-size: 18px;
     line-height: 1.2;
     font-weight: 700;
+    
   }
+  table,
+  tr,
+  td{
+    border: 2px solid rgb(58, 57, 57);
+  }
+  td{
+    padding: 10px;
+  }
+}
+table{
+  margin-top: 15px;
+}
+.contakt-table__bold{
+  font-weight: 700;
 }
